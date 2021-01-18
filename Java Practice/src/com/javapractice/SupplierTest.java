@@ -14,6 +14,6 @@ public class SupplierTest {
 			
 		};
 		System.out.println(s.get());
-		System.out.println(s.get());
+		
 }
 }

@@ -1,17 +1,34 @@
 
-/*
- * interface MyName { void showmyname(); }
- * 
- * public class LambdaExpressionExample1 {
- * 
- * public static void main(String[] args) {
- * 
- * MyName name=()->{
- * 
- * System.out.println("Anish"); }; name.showmyname();
- * 
- * } }
- */
+
+interface MyName<T> { 
+	  
+	  
+	 T showmyname(String name);
+	 
+  }
+  
+  public class LambdaExpressionExample1 {
+  
+	 void anish(MyName name)
+	{
+		 System.out.println(name.showmyname());
+			 
+	}
+  public static void main(String[] args) {
+	 
+  MyName name=()->{
+  
+  System.out.println("Anish"); }; 
+  
+  name.showmyname();
+  
+  new LambdaExpressionExample1().anish(()->)
+
+  
+  
+  
+  }
+ 
 
 /*
  * interface MyName { void showmyname(String str1, String str2); }
